@@ -1,59 +1,78 @@
-First day: Use command line for data analysis 
-------
 
    
-   Introduction to shell and UNIX
-   
-   Automation using bash scripts 
-   
+MCBL Workshop Series – Summer 2015
+===========================================
 
-Second day: RNAseq species with sequence genome
--------
+Instructors: Asela Wijeratne and Saranga Wijeratne
+--------------------------------------------------
 
-   RNAseq species with sequence genome
-   
-   Data preprocessing 
-   
-   Aligning reads to genome
-   
-   Transcriptome reconstruction using Cufflinks
-   
-   Counting aligned reads
-   
-   Differential gene expression analysis 
-   
-   Clustering
-   
-Third day: RNAseq de-novo assembly
----------
+This course is designed to build competence in methods for the analysis of high- throughput sequencing data. 
+The emphasis will be on how to find the correct analytical pipeline and parameters to get biologically meaningful data. The technologies emphasized will be Illumina high-throughput sequencing data of genomic and trancriptomic.  Course will be taught using Galaxy software suite that runs on Amazon cloud service. The course meetings will consist of short lectures, demonstrations, hands-on part and discussions and the duration of each meeting will be three hours.
 
-   De novo assembly using Trinity 
-   
-   Assess assembled transcriptome 
-   
-   Annotate transcripts  using Blast2Go and InterproScan
-   
-   Finding ORF using TransDecoder 
-   
-   Differential gene expression analysis 
-   		
-   		Counting reads with RSEM
-   		
-   		Differential gene expression analysis using DEseq and EdgR
+1.	Preprocessing of data 
+------------------------------
 
+Learning objectives and activities:
 
-Forth day: Variant detection using short reads 
---------
-	
-	Sequence alignment 
-	
-	Variant detection using GATK
-	
+Become familiar with the initial steps of genomics and/or transcriptomics analysis 
 
-   
-   
+a.	interpreting the quality of raw data
 
-Fifth day: Analyzing amplicon sequencing for 16S RNA 
-------
+b.	trimming sequence adapters from reads
 
+c.	trimming reads by quality
+
+d.	interpreting the quality of trimmed reads
+
+2.	Aligning reads to a cDNA or genome 
+------------------------------------------------
+
+Learning objectives and activities:
+
+Familiar with how the alignment process works
+
+a.	Introduction to the different short read aligners and how they work 
+
+b.	Align reads to a reference sequence and learn to adjust some of the parameters to optimize the alignment process
+
+c.	Evaluate the alignment output and will gain insight into the file formats produced.  
+
+3.	Differential gene expression analysis 
+----------------------------------------------------
+
+Learning objectives and activities:
+
+Become familiar with different workflow for differential gene expression analysis
+
+a.	Introduction to differential gene expression analysis and statistical methods used for calling differential gene expression
+
+b.	Align reads to genome or cDNA using tophat or BWA
+
+c.	Counting aligned reads using Htseq or sam2count.py
+
+d.	Calling differentially expressed genes using DEseq and EdgeR
+
+4.	Finding variations in the genome (SNPs and indel)
+-----------------------------------------------------------------
+
+Learning objectives and activities:
+
+Become familiar with SNP/INDEL finding workflow
+
+a.	Mapping or aligning the reads to a reference genome using BWA/Bowtie/Mosaik
+
+b.	SNP/indel calling using SAMtools and GATK 
+
+5.	Assembly of transcriptome (two weeks)
+----------------------------------------------------------------
+
+Learning objectives and activities:
+
+Become familiar with transcriptome assembly processes and evaluation of assembled transcriptome
+
+a.	Assemble tranacriptome using Trinity and Rnnotator
+
+b.	assess the quality of assembly
+
+c.	annotation of the newly assembled transcripts 
 
