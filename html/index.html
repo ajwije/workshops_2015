@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to the MCBL Bioinformatic workshop series &mdash; labibi 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="labibi 0.1 documentation" href="#" />
+    <link rel="next" title="Use command line for data analysis" href="first_day.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<!-- Google Analytics JS is disabled; set google_analytics_id -->
+
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="first_day.html" title="Use command line for data analysis"
+             accesskey="N">next</a> |</li>
+        <li><a href="#">labibi 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  
+  <div class="section" id="welcome-to-the-mcbl-bioinformatic-workshop-series">
+<h1>Welcome to the MCBL Bioinformatic workshop series<a class="headerlink" href="#welcome-to-the-mcbl-bioinformatic-workshop-series" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="instructors-asela-wijeratne-and-saranga-wijeratne">
+<h2>Instructors: Asela Wijeratne and Saranga Wijeratne<a class="headerlink" href="#instructors-asela-wijeratne-and-saranga-wijeratne" title="Permalink to this headline">¶</a></h2>
+<p>This course is designed to build competence in methods for the analysis of high- throughput sequencing data.
+The emphasis will be on how to find the correct analytical pipeline and parameters to get biologically meaningful data. The technologies emphasized will be Illumina high-throughput sequencing data of genomic and trancriptomic.  Course will be taught using Galaxy software suite that runs on Amazon cloud service. The course meetings will consist of short lectures, demonstrations, hands-on part and discussions and the duration of each meeting will be three hours.</p>
+</div>
+<div class="section" id="preprocessing-of-data">
+<h2>1.      Preprocessing of data<a class="headerlink" href="#preprocessing-of-data" title="Permalink to this headline">¶</a></h2>
+<p>Learning objectives and activities:</p>
+<p>Become familiar with the initial steps of genomics and/or transcriptomics analysis</p>
+<ol class="loweralpha simple">
+<li>interpreting the quality of raw data</li>
+<li>trimming sequence adapters from reads</li>
+<li>trimming reads by quality</li>
+<li>interpreting the quality of trimmed reads</li>
+</ol>
+</div>
+<div class="section" id="aligning-reads-to-a-cdna-or-genome">
+<h2>2.      Aligning reads to a cDNA or genome<a class="headerlink" href="#aligning-reads-to-a-cdna-or-genome" title="Permalink to this headline">¶</a></h2>
+<p>Learning objectives and activities:</p>
+<p>Familiar with how the alignment process works</p>
+<ol class="loweralpha simple">
+<li>Introduction to the different short read aligners and how they work</li>
+<li>Align reads to a reference sequence and learn to adjust some of the parameters to optimize the alignment process</li>
+<li>Evaluate the alignment output and will gain insight into the file formats produced.</li>
+</ol>
+</div>
+<div class="section" id="differential-gene-expression-analysis">
+<h2>3.      Differential gene expression analysis<a class="headerlink" href="#differential-gene-expression-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Learning objectives and activities:</p>
+<p>Become familiar with different workflow for differential gene expression analysis</p>
+<ol class="loweralpha simple">
+<li>Introduction to differential gene expression analysis and statistical methods used for calling differential gene expression</li>
+<li>Align reads to genome or cDNA using tophat or BWA</li>
+<li>Counting aligned reads using Htseq or sam2count.py</li>
+<li>Calling differentially expressed genes using DEseq and EdgeR</li>
+</ol>
+</div>
+<div class="section" id="finding-variations-in-the-genome-snps-and-indel">
+<h2>4.      Finding variations in the genome (SNPs and indel)<a class="headerlink" href="#finding-variations-in-the-genome-snps-and-indel" title="Permalink to this headline">¶</a></h2>
+<p>Learning objectives and activities:</p>
+<p>Become familiar with SNP/INDEL finding workflow</p>
+<ol class="loweralpha simple">
+<li>Mapping or aligning the reads to a reference genome using BWA/Bowtie/Mosaik</li>
+<li>SNP/indel calling using SAMtools and GATK</li>
+</ol>
+</div>
+<div class="section" id="assembly-of-transcriptome-two-weeks">
+<h2>5.      Assembly of transcriptome (two weeks)<a class="headerlink" href="#assembly-of-transcriptome-two-weeks" title="Permalink to this headline">¶</a></h2>
+<p>Learning objectives and activities:</p>
+<p>Become familiar with transcriptome assembly processes and evaluation of assembled transcriptome</p>
+<ol class="loweralpha simple">
+<li>Assemble tranacriptome using Trinity and Rnnotator</li>
+<li>assess the quality of assembly</li>
+<li>annotation of the newly assembled transcripts</li>
+</ol>
+<p>This site is under construction.</p>
+</div>
+<div class="section" id="first-day">
+<h2>First day<a class="headerlink" href="#first-day" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="first_day.html">Use command line for data analysis</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="second-day">
+<h2>Second day<a class="headerlink" href="#second-day" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="2nd_day.html">RNAseq analysis for organisms with sequenced genome</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="third-day">
+<h2>Third day<a class="headerlink" href="#third-day" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="3rd_day.html">RNAseq de-novo assembly</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="forth-day">
+<h2>Forth day<a class="headerlink" href="#forth-day" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="4th_day.html">Variant detection using short reads</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="fifth-day">
+<h2>Fifth day<a class="headerlink" href="#fifth-day" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="5th_day.html">Analyzing amplicon sequencing for 16S RNA</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- disqus commenting disabled; set disqus_shortname -->
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to the MCBL Bioinformatic workshop series</a><ul>
+<li><a class="reference internal" href="#instructors-asela-wijeratne-and-saranga-wijeratne">Instructors: Asela Wijeratne and Saranga Wijeratne</a></li>
+<li><a class="reference internal" href="#preprocessing-of-data">1.      Preprocessing of data</a></li>
+<li><a class="reference internal" href="#aligning-reads-to-a-cdna-or-genome">2.      Aligning reads to a cDNA or genome</a></li>
+<li><a class="reference internal" href="#differential-gene-expression-analysis">3.      Differential gene expression analysis</a></li>
+<li><a class="reference internal" href="#finding-variations-in-the-genome-snps-and-indel">4.      Finding variations in the genome (SNPs and indel)</a></li>
+<li><a class="reference internal" href="#assembly-of-transcriptome-two-weeks">5.      Assembly of transcriptome (two weeks)</a></li>
+<li><a class="reference internal" href="#first-day">First day</a></li>
+<li><a class="reference internal" href="#second-day">Second day</a></li>
+<li><a class="reference internal" href="#third-day">Third day</a></li>
+<li><a class="reference internal" href="#forth-day">Forth day</a></li>
+<li><a class="reference internal" href="#fifth-day">Fifth day</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="first_day.html"
+                        title="next chapter">Use command line for data analysis</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="first_day.html" title="Use command line for data analysis"
+             >next</a> |</li>
+        <li><a href="#">labibi 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2012, C. Titus Brown.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+
+
+
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      <p>
+
+      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/ajwije/labibi/blob/master/index.rst">
+          Welcome to the MCBL Bioinformatic workshop series
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/ajwije/labibi/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', ]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>
